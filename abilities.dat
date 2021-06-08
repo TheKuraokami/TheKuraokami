@@ -1,0 +1,231 @@
+[abilityParameters]
+abilityId=string; simple ability name
+imageDat=int; 2d image data from separate dat file
+voxelDat=int; 3d image data from separate dat file
+soundDat=int; sound data from separate dat file
+name_text=string; written name of ability
+short_text=string; short written description of ability
+long_text=string; long written descritption/lore of ability
+armor=int; armor stat bonus
+strength=int; strength stat bonus
+dexterity=int; dexterity stat bonus
+intelligence=int; intelligence stat bonus
+luck=int; luck stat bonus
+movement=int; movement stat bonus
+health=int; health stat bonus
+baseCost=int; base ability cost in terms of mp, rp, cp, fp, etc.
+duration=int; duration of non-direct damage ability effects
+ally=int; targetting; 0=hostile npc, 1=hostile npc & allies, 2=allies
+range=int; base range
+area_id=int; from parameter table; tile layout of area of effect
+onHit_effect=int; from parameter table; basic status effect applied to target hit by ability
+onHit_level=int; strength of onHit_effect
+onHit_chance=int; base chance of onHit_effect being applied to target
+onUse_effect=int; from parameter table; basic status effect appled to user when performing ability
+onUse_level=int; strength of onHit_effect
+onUse_chance=int; base chance of onUse_effect being applied to user
+cast_effect=int; ability cast on user when performing ability
+cast_effect_chance=int; base chance of cast_effect being applied to user
+cast_spell_effect=int; ability cast on target when performing ability
+cast_spell_effect_chance=int; base chance of cast_spell_effect being applied to target
+element=int; from parameter table; type of damage dealt by ability, e.g., ice, fire, lightning, etc.
+material=int; from parameter table; material type of ability used, e.g., iron, salt, silver, etc.
+damage_base=int; minimum damage dealt by ability
+damage_dice=int; number of sides per damage dice
+damage_num_dice=int; number of damage dice per use
+
+[abilityTemplate]
+abilityId=
+imageDat=
+voxelDat=
+soundDat=
+name_text=
+short_text=
+long_text=
+armor=
+strength=
+dexterity=
+intelligence=
+luck=
+movement=
+health=
+baseCost=
+duration=
+ally=
+range=
+area_id=
+onHit_effect=
+onHit_level=
+onHit_chance=
+onUse_effect=
+onUse_level=
+onUse_chance=
+cast_effect=
+cast_effect_chance=
+cast_spell_effect=
+cast_spell_effect_chance=
+element=
+material=
+damage_base=
+damage_dice=
+damage_num_dice=
+
+
+[abilitydefs]
+numabilities=0002
+
+[ability0001]
+abilityId=Anger_Strike
+imageDat=0
+voxelDat=0
+soundDat=0
+name_text='Anger Strike'
+short_text='Intimidate and confuse your enemies as you strike at their sanity with your relentless attacks.'
+long_text='undefined'
+armor=0
+strength=0
+dexterity=0
+intelligence=0
+luck=0
+movement=0
+health=0
+baseCost=10
+duration=1
+ally=1
+range=1
+area_id=1
+onHit_effect=10(Stop)
+onHit_level=1
+onHit_chance=75
+onUse_effect=0
+onUse_level=0
+onUse_chance=0
+cast_effect=0
+cast_effect_chance=0
+cast_spell_effect=002
+cast_spell_effect_chance=75
+element=9
+material=0
+damage_base=0
+damage_dice=4
+damage_num_dice=1
+
+[ability0002]
+abilityId=Confusion
+imageDat=0
+voxelDat=0
+soundDat=0
+name_text='Confusion'
+short_text='Cause your targets to become Confused and attack nearby enemies and allies at random.'
+long_text='undefined'
+armor=0
+strength=0
+dexterity=0
+intelligence=0
+luck=0
+movement=0
+health=0
+baseCost=10
+duration=3
+ally=1
+range=1
+area_id=1
+onHit_effect=16
+onHit_level=1
+onHit_chance=75
+onUse_effect=0
+onUse_level=0
+onUse_chance=0
+cast_effect=0
+cast_effect_chance=0
+cast_spell_effect=0
+cast_spell_effect_chance=0
+element=8
+material=0
+damage_base=0
+damage_dice=0
+damage_num_dice=0
+
+[abilityLists]
+numabilityLists=002
+
+[abilityList001]
+abilityList_id=Warrior's_Rage
+abilityList_text='Warrior's Rage'
+Level_1=0
+Level_2=0
+Level_3=0
+Level_4=0
+Level_5=0001
+Level_6=0
+Level_7=0
+Level_8=0
+Level_9=0
+Level_10=0
+Level_11=0
+Level_12=0
+Level_13=0
+Level_14=0
+Level_15=0
+Level_16=0
+Level_17=0
+Level_18=0
+Level_19=0
+Level_20=0
+Level_21=0
+Level_22=0
+Level_23=0
+Level_24=0
+Level_25=0
+Level_26=0
+Level_27=0
+Level_28=0
+Level_29=0
+Level_30=0
+
+[abilityList002]
+abilityList_id=UnholyMagic
+abilityList_text='Unholy Magic'
+Level_1=0
+Level_2=0
+Level_3=0002
+Level_4=0
+Level_5=0
+Level_6=0
+Level_7=0
+Level_8=0
+Level_9=0
+Level_10=0
+Level_11=0
+Level_12=0
+Level_13=0
+Level_14=0
+Level_15=0
+Level_16=0
+Level_17=0
+Level_18=0
+Level_19=0
+Level_20=0
+Level_21=0
+Level_22=0
+Level_23=0
+Level_24=0
+Level_25=0
+Level_26=0
+Level_27=0
+Level_28=0
+Level_29=0
+Level_30=0
+
+[classLists]
+numClassLists=0002
+
+[classList0001]
+class_id=Warrior
+class_text='Warrior'
+class_abilityLists=0001
+
+[classList0002]
+class_id=Necromancer
+class_text='Necromancer'
+class_abilityLists=0001
