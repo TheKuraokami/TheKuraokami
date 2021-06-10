@@ -185,8 +185,8 @@ material=1
 damage_base=0
 damage_dice=0
 damage_num_dice=0
-death_id=0
-death_quantity=0
+death_id=0005
+death_quantity=1
 value=10
 
 [item0003]
@@ -279,8 +279,8 @@ material=1
 damage_base=0
 damage_dice=4
 damage_num_dice=1
-death_id=0
-death_quantity=0
+death_id=0005
+death_quantity=1
 value=5
 
 [item0005]
