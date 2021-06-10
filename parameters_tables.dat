@@ -13,6 +13,21 @@
 11=nature
 12=time
 
+[material]
+0=untyped
+1=copper
+2=bronze
+3=iron
+4=steel
+5=mithril
+6=vibranium
+7=starfire
+8=pine
+9=oak
+10=walnut
+11=bloodwood
+12=ironwood
+
 [typeid]
 0=junk item
 1=equipable
@@ -24,6 +39,13 @@
 7=resource
 8=structure
 9=deployable
+10=tool
+11=workstation
+
+[skill]
+0=none
+1=forging
+2=blacksmithing
 
 [type]
 0=null

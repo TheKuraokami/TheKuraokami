@@ -34,6 +34,37 @@ damage_base=int; minimum damage dealt by ability
 damage_dice=int; number of sides per damage dice
 damage_num_dice=int; number of damage dice per use
 
+onHit_effect=Applies status effect to target
+onUse_effect=Applies status effect to user
+cast_effect=Casts ability with user as both caster and target
+cast_chain_effect=Casts ability with user as caster and target as target
+cast_spell_effect=Casts ability with target as both caster and target
+
+examples:
+
+onHit_effect=poison
+cast_effect=ablity001
+spell001:
+onUse_effect=regen
+End Result: user poisons target and regens self
+
+onHit_effect=poison
+cast_spell_effect=ability002
+spell002:
+onUse_effect=doom
+End Result: user poisons target and target dooms self
+
+onHit_effect=poison
+cast_chain_effect=ability003
+ability003:
+onHit_effect=doom
+cast_chain_effect=ability004
+ability004:
+onHit_effect=frog
+End Result: user poisons target, user dooms target, user frogs target
+
+
+
 [abilityTemplate]
 abilityId=
 imageDat=
@@ -62,6 +93,8 @@ onUse_level=
 onUse_chance=
 cast_effect=
 cast_effect_chance=
+cast_chain_effect=
+cast_chain_effect_chance=
 cast_spell_effect=
 cast_spell_effect_chance=
 element=
@@ -145,6 +178,196 @@ material=0
 damage_base=0
 damage_dice=0
 damage_num_dice=0
+
+ability=003
+abilityId=Chain_Lightning
+imageDat=0
+voxelDat=0
+soundDat=0
+name_text='Chain Lightning'
+short_text='Hits targets in small area one to five times.'
+long_text='Created by the former Storm Lord Alazarn, this ability strikes an uneasy fear in enemies for its potential to strike five times.'
+armor=0
+strength=0
+dexterity=0
+intelligence=0
+luck=0
+movement=0
+health=0
+baseCost=50
+duration=0
+ally=1
+range=5
+area_id=3
+onHit_effect=0
+onHit_level=0
+onHit_chance=0
+onUse_effect=0
+onUse_level=0
+onUse_chance=0
+cast_effect=0
+cast_effect_chance=0
+cast_chain_effect=004
+cast_chain_effect_chance=50
+cast_spell_effect=0
+cast_spell_effect_chance=0
+element=5
+material=0
+damage_base=0
+damage_dice=8
+damage_num_dice=1
+
+ability=004
+abilityId=Chain_Lightning_2
+imageDat=0
+voxelDat=0
+soundDat=0
+name_text='Chain Lightning'
+short_text='Hits targets in small area one to five times.'
+long_text='Created by the former Storm Lord Alazarn, this ability strikes an uneasy fear in enemies for its potential to strike five times.'
+armor=0
+strength=0
+dexterity=0
+intelligence=0
+luck=0
+movement=0
+health=0
+baseCost=50
+duration=0
+ally=1
+range=5
+area_id=3
+onHit_effect=0
+onHit_level=0
+onHit_chance=0
+onUse_effect=0
+onUse_level=0
+onUse_chance=0
+cast_effect=0
+cast_effect_chance=0
+cast_chain_effect=005
+cast_chain_effect_chance=50
+cast_spell_effect=0
+cast_spell_effect_chance=0
+element=5
+material=0
+damage_base=0
+damage_dice=8
+damage_num_dice=1
+
+ability=005
+abilityId=Chain_Lightning_3
+imageDat=0
+voxelDat=0
+soundDat=0
+name_text='Chain Lightning'
+short_text='Hits targets in small area one to five times.'
+long_text='Created by the former Storm Lord Alazarn, this ability strikes an uneasy fear in enemies for its potential to strike five times.'
+armor=0
+strength=0
+dexterity=0
+intelligence=0
+luck=0
+movement=0
+health=0
+baseCost=50
+duration=0
+ally=1
+range=5
+area_id=3
+onHit_effect=0
+onHit_level=0
+onHit_chance=0
+onUse_effect=0
+onUse_level=0
+onUse_chance=0
+cast_effect=0
+cast_effect_chance=0
+cast_chain_effect=006
+cast_chain_effect_chance=50
+cast_spell_effect=0
+cast_spell_effect_chance=0
+element=5
+material=0
+damage_base=0
+damage_dice=8
+damage_num_dice=1
+
+ability=006
+abilityId=Chain_Lightning_4
+imageDat=0
+voxelDat=0
+soundDat=0
+name_text='Chain Lightning'
+short_text='Hits targets in small area one to five times.'
+long_text='Created by the former Storm Lord Alazarn, this ability strikes an uneasy fear in enemies for its potential to strike five times.'
+armor=0
+strength=0
+dexterity=0
+intelligence=0
+luck=0
+movement=0
+health=0
+baseCost=50
+duration=0
+ally=1
+range=5
+area_id=3
+onHit_effect=0
+onHit_level=0
+onHit_chance=0
+onUse_effect=0
+onUse_level=0
+onUse_chance=0
+cast_effect=0
+cast_effect_chance=0
+cast_chain_effect=007
+cast_chain_effect_chance=50
+cast_spell_effect=0
+cast_spell_effect_chance=0
+element=5
+material=0
+damage_base=0
+damage_dice=8
+damage_num_dice=1
+
+ability=007
+abilityId=Chain_Lightning_5
+imageDat=0
+voxelDat=0
+soundDat=0
+name_text='Chain Lightning'
+short_text='Hits targets in small area one to five times.'
+long_text='Created by the former Storm Lord Alazarn, this ability strikes an uneasy fear in enemies for its potential to strike five times.'
+armor=0
+strength=0
+dexterity=0
+intelligence=0
+luck=0
+movement=0
+health=0
+baseCost=50
+duration=0
+ally=1
+range=5
+area_id=3
+onHit_effect=0
+onHit_level=0
+onHit_chance=0
+onUse_effect=0
+onUse_level=0
+onUse_chance=0
+cast_effect=0
+cast_effect_chance=0
+cast_chain_effect=0
+cast_chain_effect_chance=0
+cast_spell_effect=0
+cast_spell_effect_chance=0
+element=5
+material=0
+damage_base=0
+damage_dice=8
+damage_num_dice=1
 
 [abilityLists]
 numabilityLists=002
