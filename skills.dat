@@ -1,0 +1,69 @@
+[skillParameters]
+skillId=string; skill id
+skillType=int; 1=gathering, 2=crafting
+imageDat=int; 2d image data from separate dat file
+voxelDat=int; 3d image data from separate dat file
+soundDat=int; sound data from separate dat file
+name_text=string; written name of recipe
+short_text=string; short written description of recipe
+long_text=string; long written descritption/lore of recipe
+min_level=int; minimum skill level
+max_level=int; maximum skill level
+tools=int; list; items used and expended by skill
+workstation=int; list; items required within one tile to use skill
+
+[skillTemplate]
+skillId=
+skillType=
+imageDat=
+voxelDat=
+soundDat=
+name_text=
+short_text=
+long_text=
+min_level=
+max_level=
+tools=
+workstation=
+
+[skill0001]
+skillId=MINING
+skillType=1
+imageDat=0
+voxelDat=0
+soundDat=0
+name_text='Mining'
+short_text='Mining allows the gathering of ores, gems, oil, and other earth-based materials'
+long_text=''
+min_level=1
+max_level=150
+tools=0 	
+workstation=0
+
+[skill0002]
+skillId=FORGING
+skillType=2
+imageDat=0
+voxelDat=0
+soundDat=0
+name_text='Forging'
+short_text='Forging allows the refinement of basic mining components.'
+long_text=''
+min_level=1
+max_level=150
+tools=0002
+workstation=0008
+
+[skill0003]
+skillId=SMITHING
+skillType=2
+imageDat=0
+voxelDat=0
+soundDat=0
+name_text='Smithing'
+short_text='Smithing allows the crafting of items from metals.'
+long_text=''
+min_level=1
+max_level=150
+tools=0002
+workstation=0008
